@@ -1,0 +1,28 @@
+spring:
+  profiles:
+    active: druid, mybatisplus
+  application:
+    name: express
+  jackson:
+    time-zone: Asia/Shanghai
+    date-format: yyyy-MM-dd HH:mm:ss
+server:
+  servlet:
+    context-path: /express
+  port: 3333
+  tomcat:
+    remote-ip-header: X-Real-IP
+    protocol-header: X-Forwarded-Proto
+  forward-headers-strategy: framework
+# 日志配置文件
+logging:
+  config: classpath:log4j2/log4j2.xml
+
+debug: true
+
+fnpt:
+  appid: wuyi
+  secretKey: 7MZZ6tQkJ1EtyLld5xVj7O8kcrqcuQ46c9072c683f2b60b78da125f4439751d7
+  apiUrl: http://isv-pt.alta.elenet.me
+  userId: 2000274
+  shopId: 100001508
