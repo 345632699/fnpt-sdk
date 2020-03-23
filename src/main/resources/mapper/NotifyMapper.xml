@@ -12,5 +12,8 @@
         <result column="status" property="status" />
         <result column="content" property="content" />
     </resultMap>
+    <select id="getByOrderNo" resultType="com.wuyi.express.entity.Notify">
+        select * from notify where order_no = #{orderNo}
+    </select>
 
 </mapper>

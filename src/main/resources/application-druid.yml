@@ -63,3 +63,14 @@ spring:
             delete-where-none-check: true
       # 合并多个DruidDataSource的监控数据
       use-global-data-source-stat: true
+  redis:
+    database: 2
+    host: www.mist1.com
+    port: 9000
+    password: mistone23s
+    jedis:
+      pool:
+        max-idle: 1000
+        max-wait: -1
+        min-idle: 2
+        max-active: 10

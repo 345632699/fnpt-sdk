@@ -13,4 +13,5 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface NotifyService extends IService<Notify> {
 
+    Notify getByOrderNo(String orderNo);
 }

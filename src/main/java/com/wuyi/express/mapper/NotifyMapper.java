@@ -15,4 +15,5 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface NotifyMapper extends BaseMapper<Notify> {
 
+    Notify getByOrderNo(String orderNo);
 }

@@ -9,7 +9,7 @@ spring:
 server:
   servlet:
     context-path: /express
-  port: 3333
+  port: 4444
   tomcat:
     remote-ip-header: X-Real-IP
     protocol-header: X-Forwarded-Proto
